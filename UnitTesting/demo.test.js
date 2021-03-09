@@ -31,5 +31,6 @@ describe("demo", () => {
     it("should test true", () => {
       expect(true).to.equal(true);
     });
+    it("is a pending test");
   });
 });
