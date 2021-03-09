@@ -6,6 +6,18 @@ const rewire = require("rewire");
 var demo = rewire("./demo");
 
 describe("demo", () => {
+  before(() => {
+    console.log("***********Before*******");
+  });
+  after(() => {
+    console.log("***********After*******");
+  });
+  beforeEach(() => {
+    console.log("***********Before Each*******");
+  });
+  afterEach(() => {
+    console.log("***********After Each*******");
+  });
   context("add", () => {
     it("should add two numbers", () => {
       expect(demo.add(1, 2)).to.equal(3);
