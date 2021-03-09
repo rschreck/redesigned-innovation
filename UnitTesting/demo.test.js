@@ -31,6 +31,13 @@ describe("demo", () => {
     it("should test true", () => {
       expect(true).to.equal(true);
     });
+    it("should test callback", (done) => {
+      demo.addCallback(1, 2, (err, result) => {
+        expect(err).to.not.exists;
+        expect(result).to.equal(3);
+        done();
+      });
+    });
     it("is a pending test");
   });
 });
