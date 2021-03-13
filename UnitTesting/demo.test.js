@@ -73,7 +73,7 @@ describe("demo", () => {
     });
     it("should test add promise with chai-promised", async () => {
       let result = await demo.addPromise(1, 3);
-      expect(result).to.eventually.equal(4);
+      expect(result).to.equal(4);
 
       //  await expect(demo.addPromise(1, 2)).to.eventually.equal(3);
     });

@@ -16,4 +16,7 @@ addPromise = function (a, b) {
   //return Promise.reject(new Error("promise error"));
   return Promise.resolve(a + b);
 };
-module.exports = { add, subtract, multiply, addCallback, addPromise };
+writeLog = function () {
+  console.log("wrote something");
+};
+module.exports = { add, subtract, multiply, addCallback, addPromise, writeLog };
