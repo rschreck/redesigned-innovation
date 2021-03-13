@@ -12,4 +12,8 @@ addCallback = function (a, b, callback) {
     return callback(null, a + b);
   }, 500);
 };
-module.exports = { add, subtract, multiply, addCallback };
+addPromise = function (a, b) {
+  //return Promise.reject(new Error("promise error"));
+  return Promise.resolve(a + b);
+};
+module.exports = { add, subtract, multiply, addCallback, addPromise };
