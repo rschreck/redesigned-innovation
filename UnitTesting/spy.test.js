@@ -9,8 +9,6 @@ const rewire = require("rewire");
 var fake = require("./spy");
 //const { expect } = require("chai");
 describe("fake", () => {
-  it("should be tested later");
-  it("should be tested later2");
   context("test doubles", () => {
     it("should spy on console.log", () => {
       let spy = sinon.spy(console, "log");
