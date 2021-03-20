@@ -5,9 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "cross-env NODE_ENV=development mocha \"./{,!(node_modules)/**/}*.test.js\" --exit",
-    "test2": "mocha \"./tests/**/*.js\" --recursive",
-    "test3": "mocha **/*.test.js",
-    "test4": "nodemon --exec \"mocha -R min\""
+    "test2":"mocha ./src/**/*.test.js"
   },
   "author": "",
   "license": "ISC",
@@ -21,6 +19,8 @@
     "rewire": "^4.0.1",
     "sinon": "^5.0.10",
     "sinon-chai": "^3.1.0",
-    "supertest": "^3.4.2"
+    "supertest": "^3.4.2",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.15"
   }
 }
